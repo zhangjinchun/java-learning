@@ -8,13 +8,10 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        StringBuffer stringBuffer = new StringBuffer(); //断点
-        stringBuffer.append("hello");
-        stringBuffer.append("hello11");
-        stringBuffer.append("hello22");
-
-        String nullStr = null;
-        stringBuffer.append(nullStr);
+        int[][] arr = new int[3][];
+        System.out.println(arr.length);
+        int[][] b = new int[3][5];
+        System.out.println(b.length);
     }
 
 }
