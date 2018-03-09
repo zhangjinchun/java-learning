@@ -1,5 +1,6 @@
 package demo;
 
+import serializable.People;
 import java.util.*;
 
 public class Main {
@@ -8,10 +9,10 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        int[][] arr = new int[3][];
-        System.out.println(arr.length);
-        int[][] b = new int[3][5];
-        System.out.println(b.length);
+
+        People people = new People();
+        boolean bool;
+        System.out.println(people);
     }
 
 }
