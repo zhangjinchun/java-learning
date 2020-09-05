@@ -28,7 +28,7 @@ import java.util.TreeMap;
  * @author zhangjinchun
  * @date 2020/6/16
  */
-public class LeetDemo {
+public class LeetSolution {
 
     public static class ListNode {
         int val;
