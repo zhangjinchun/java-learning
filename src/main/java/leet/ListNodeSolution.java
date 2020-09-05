@@ -20,21 +20,6 @@ public class ListNodeSolution {
     }
 
     public static ListNode reverseList(ListNode head) {
-        if (head == null) {
-            return null;
-        }
-//        LinkedList<Integer> stack = new LinkedList<>();
-//        while (head != null) {
-//            stack.add(head.val);
-//            head = head.next;
-//        }
-//        ListNode res = new ListNode(stack.pollLast());
-//        ListNode result = res;
-//        while (!stack.isEmpty()) {
-//            res.next = new ListNode(stack.pollLast());
-//            res = res.next;
-//        }
-//        return result;
 
         ListNode prev = null, cur = head, temp = null;
         while (cur != null) {

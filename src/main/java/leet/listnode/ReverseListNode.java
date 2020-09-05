@@ -10,13 +10,6 @@ import java.util.LinkedList;
  * @date 2020/9/5
  */
 public class ReverseListNode {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 原地反转，空间复杂度为O(1)
