@@ -14,6 +14,10 @@ public class MainDemo {
 
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
+        if (str == null || str.length() == 0 || str.equals("input is null")) {
+            System.out.println(-1);
+            return;
+        }
         System.out.println(str);
         String[] strArr = str.split(" ");
         System.out.println(Arrays.toString(strArr));
@@ -37,19 +41,19 @@ public class MainDemo {
             return request[0] == 1 ? 2 : 1;
         }
         for (int left=0; left < len -1; left++) {
-            for (int i=left +1; i< len-1; i++) {
-                if (request[i] < min) {
-                    min = request[i];
+            for (int i=left + 1; i< len-1; i++) {
+                if (request[i] < request[left]) {
                     int temp = request[left];
                     request[left] = request[i];
                     request[i] = temp;
                 }
             }
-            if (left == 0 && request[left]>1) {
-                return 1;
-            }
-            if (request[left+1] > request[left] + 1) {
-                return request[left] + 1;
+            if (left == 0) {
+                if (request[left]>1) {
+                    return 1;
+                }
+            } else if (request[left] > request[left-1] + 1 && request[left] > 1) {
+                return Math.max(request[left-1] + 1, 1);
             }
         }
 
