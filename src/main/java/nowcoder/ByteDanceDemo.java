@@ -17,7 +17,7 @@ import java.util.*;
  */
 
 /**
- * 运行时输出不能有其他内容
+ * 说明：输出不能有其他非结果内容，否则系统校验不通过
  */
 public class ByteDanceDemo {
     public static void main(String[] args) {
