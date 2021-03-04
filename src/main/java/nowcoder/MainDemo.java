@@ -15,13 +15,13 @@ public class MainDemo {
         // 读取一维整数数组输入
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        if (str == null || str.length() == 0 || str.equals("input is null")) {
-            System.out.println(-1);
-            return;
-        }
-        System.out.println(str);
+//        if (str == null || str.length() == 0 || str.equals("input is null")) {
+//            System.out.println(-1);
+//            return;
+//        }
+//        System.out.println(str);
         String[] strArr = str.split(" ");
-        System.out.println(Arrays.toString(strArr));
+//        System.out.println(Arrays.toString(strArr));
         int[] request = new int[strArr.length];
         for (Integer i = 0; i < request.length; i++) {
             request[i] = Integer.parseInt(strArr[i]);
