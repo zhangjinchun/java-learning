@@ -38,7 +38,6 @@ public class MainDemo {
             return -1;
         }
         int len = request.length;
-        int min = request[0];
         if (len == 1) {
             return request[0] == 1 ? 2 : 1;
         }
