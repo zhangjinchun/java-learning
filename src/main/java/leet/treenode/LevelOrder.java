@@ -29,7 +29,6 @@ public class LevelOrder {
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         List<List<Integer>> result = new ArrayList<>();
-        int flag = 0;
         while (!queue.isEmpty()) {
             LinkedList<Integer> tmp = new LinkedList<>();
             for(int i = queue.size(); i > 0; i--) {
