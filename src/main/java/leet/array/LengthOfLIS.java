@@ -10,7 +10,7 @@ import java.util.*;
 public class LengthOfLIS {
 
     /**
-     * 动态规划
+     * 动态规划（推荐，逻辑简单）
      * @param nums
      * @return
      */
